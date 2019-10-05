@@ -1,29 +1,42 @@
-extends Node2D
+extends KinematicBody2D
 
-var movedir = Vector2()
+var velocity = Vector2()
+var screen_size  # Size of the game window.
 export var SPEED = 200
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	screen_size = get_viewport_rect().size
+	
 
-func controls_loop():
+func _process(delta):
 	var left = Input.is_action_pressed("ui_left")
 	var right = Input.is_action_pressed("ui_right")
 	var up = Input.is_action_pressed("ui_up")
 	var down = Input.is_action_pressed("ui_down")
 
-	movedir.x = -int(left) + int(right)
-	movedir.y = -int(up) + int(down)
+	velocity.x = -int(left) + int(right)
+	velocity.y = -int(up) + int(down)
 	if Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_right"):
-		$JM.play("side")
+		$POL.play("side")
 	elif Input.is_action_pressed("ui_down"):
-		$JM.play("down")
+		$POL.play("down")
 	elif Input.is_action_pressed("ui_up"):
-		$JM.play("up")
+		$POL.play("up")
 	else:
-		$JM.stop()
-	
+		$POL.stop()
+	if velocity.x != 0:
+		$POL.animation = "right"
+		$POL.flip_v = false
+		# See the note below about boolean assignment
+		$POL.flip_h = velocity.x < 0
+	elif velocity.y != 0:
+		$POL.animation = "up"
+	movement_loop()
+#	position += velocity * delta
+#	position.x = clamp(position.x, 0, screen_size.x)
+#	position.y = clamp(position.y, 0, screen_size.y)
 func movement_loop():
-	var motion = movedir.normalized() * SPEED
+	var motion = velocity.normalized() * SPEED
+	move_and_slide(motion)
+	
 	
