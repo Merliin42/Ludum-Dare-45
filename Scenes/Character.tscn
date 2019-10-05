@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/Character.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Jam- gnome.png" type="Texture" id=2]
+[ext_resource path="res://Assets/gnome.png" type="Texture" id=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -17,19 +17,16 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 73.6593
-height = 7.97301
+radius = 310.964
+height = 304.033
 
-[node name="player" type="KinematicBody2D"]
+[node name="Character" type="KinematicBody2D"]
 script = ExtResource( 1 )
 SPEED = 300
 
 [node name="POL" type="AnimatedSprite" parent="."]
-position = Vector2( 580.706, 295.281 )
-scale = Vector2( 0.19849, 0.125119 )
 frames = SubResource( 1 )
 animation = "right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 580.525, 295.183 )
 shape = SubResource( 2 )

@@ -1,12 +1,10 @@
 extends KinematicBody2D
 
 var velocity = Vector2()
-var screen_size  # Size of the game window.
 export var SPEED = 200
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	screen_size = get_viewport_rect().size
-	
+	pass
 
 func _process(delta):
 	var left = Input.is_action_pressed("ui_left")
@@ -32,11 +30,7 @@ func _process(delta):
 	elif velocity.y != 0:
 		$POL.animation = "up"
 	movement_loop()
-#	position += velocity * delta
-#	position.x = clamp(position.x, 0, screen_size.x)
-#	position.y = clamp(position.y, 0, screen_size.y)
+
 func movement_loop():
 	var motion = velocity.normalized() * SPEED
 	move_and_slide(motion)
-	
-	
