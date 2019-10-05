@@ -6,3 +6,9 @@
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+build_mode = 1
+polygon = PoolVector2Array( 1810, 830, 1810, -830, 1330, -830, 1330, -650, 1590, -650, 1590, -640, 1310, -640, 1310, -830, 360, -830, 360, -580, -740, -580, -740, -830, -1410, -830, -1810, -830, -1810, 830, -940, 830, -940, 260, -920, 260, -920, 830, -290, 830, -290, 540, -270, 540, -270, 830, 1310, 830, 1310, -490, 1640, -490, 1640, -470, 1330, -470, 1330, 830 )
