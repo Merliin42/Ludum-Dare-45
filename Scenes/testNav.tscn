@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Indoor.tres" type="TileSet" id=2]
 [ext_resource path="res://Assets/gnome.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Character.gd" type="Script" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -20,3 +21,4 @@ tile_data = PoolIntArray( 0, 0, 2, 1, 0, 3, 2, 0, 4, 3, 0, 3, 4, 0, 4, 5, 0, 3, 
 position = Vector2( 190, 240 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 3 )
+script = ExtResource( 4 )
