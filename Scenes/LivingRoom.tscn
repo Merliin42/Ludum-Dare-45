@@ -837,11 +837,9 @@ position = Vector2( 18.2227, -6.99927 )
 texture = ExtResource( 5 )
 
 [node name="biblio3" type="StaticBody2D" parent="."]
-editor/display_folded = true
 position = Vector2( 5236.35, 3375.31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="biblio3"]
-shape = SubResource( 108 )
 
 [node name="Sprite" type="Sprite" parent="biblio3/CollisionShape2D"]
 position = Vector2( -153.613, -72.8699 )
@@ -959,23 +957,23 @@ texture = ExtResource( 9 )
 [node name="billard" type="StaticBody2D" parent="tapis"]
 position = Vector2( 12.2493, -12.9131 )
 
-[node name="Sprite" type="Sprite" parent="tapis/billard"]
+[node name="Sprite" type="Sprite" parent="billard"]
 position = Vector2( 32.3779, 9.06445 )
 scale = Vector2( 0.257235, 0.257235 )
 texture = ExtResource( 10 )
 
-[node name="piedBillard1" type="CollisionPolygon2D" parent="tapis/billard"]
+[node name="piedBillard1" type="CollisionPolygon2D" parent="billard"]
 polygon = PoolVector2Array( -147.762, 129.104, -87.8115, 130.747, -89.2012, 93.22, -147.113, 93.22 )
 
-[node name="piedBillard2" type="CollisionPolygon2D" parent="tapis/billard"]
+[node name="piedBillard2" type="CollisionPolygon2D" parent="billard"]
 position = Vector2( 262.051, -189.075 )
 polygon = PoolVector2Array( -147.762, 129.104, -87.8115, 130.747, -89.2012, 93.22, -147.113, 93.22 )
 
-[node name="piedBillard3" type="CollisionPolygon2D" parent="tapis/billard"]
+[node name="piedBillard3" type="CollisionPolygon2D" parent="billard"]
 position = Vector2( 7.7832, -189.201 )
 polygon = PoolVector2Array( -147.762, 129.104, -87.8115, 130.747, -89.2012, 93.22, -147.113, 93.22 )
 
-[node name="piedBillard4" type="CollisionPolygon2D" parent="tapis/billard"]
+[node name="piedBillard4" type="CollisionPolygon2D" parent="billard"]
 position = Vector2( 271.952, -0.463135 )
 polygon = PoolVector2Array( -147.762, 129.104, -87.8115, 130.747, -89.2012, 93.22, -147.113, 93.22 )
 
