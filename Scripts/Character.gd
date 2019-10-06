@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 var velocity = Vector2()
 export var SPEED = 200
+var animation_playing = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -14,21 +15,28 @@ func _process(delta):
 
 	velocity.x = -int(left) + int(right)
 	velocity.y = -int(up) + int(down)
-	if Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_right"):
-		$POL.play("side")
+	if Input.is_action_pressed("ui_left") :
+		$POL.play("left")
+		$popol.play("default")
+	elif Input.is_action_pressed("ui_right") :
+		$POL.play("right")
+		$popol.play("default")
 	elif Input.is_action_pressed("ui_down"):
 		$POL.play("down")
+		$popol.play("default")
 	elif Input.is_action_pressed("ui_up"):
 		$POL.play("up")
+		$popol.play("default")
 	else:
-		$POL.stop()
-	if velocity.x != 0:
-		$POL.animation = "right"
-		$POL.flip_v = false
-		# See the note below about boolean assignment
-		$POL.flip_h = velocity.x < 0
-	elif velocity.y != 0:
-		$POL.animation = "up"
+		$POL.play("stop")
+		$popol.stop()
+#	if velocity.x != 0:
+#		$POL.animation = "right"
+#		$POL.flip_v = false
+#		# See the note below about boolean assignment
+#		$POL.flip_h = velocity.x < 0
+#	elif velocity.y != 0:
+#		$POL.animation = "up"
 	movement_loop()
 
 func movement_loop():

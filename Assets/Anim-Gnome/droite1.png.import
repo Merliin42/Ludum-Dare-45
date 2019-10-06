@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gnome.png-b462830ffd3cea54fa59bd8f3845c952.stex"
+path="res://.import/droite1.png-a69d814f6da15e0e38353d3148d5d4c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/gnome.png"
-dest_files=[ "res://.import/gnome.png-b462830ffd3cea54fa59bd8f3845c952.stex" ]
+source_file="res://Assets/Anim-Gnome/droite1.png"
+dest_files=[ "res://.import/droite1.png-a69d814f6da15e0e38353d3148d5d4c7.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gnome.png-b462830ffd3cea54fa59bd8f3845c952.stex"
+path="res://.import/marche-ar1.png-88b498da053f7168c345624edec9e890.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/gnome.png"
-dest_files=[ "res://.import/gnome.png-b462830ffd3cea54fa59bd8f3845c952.stex" ]
+source_file="res://Assets/Anim-Gnome/marche-ar1.png"
+dest_files=[ "res://.import/marche-ar1.png-88b498da053f7168c345624edec9e890.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

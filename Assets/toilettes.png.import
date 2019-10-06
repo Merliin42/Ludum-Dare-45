@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gnome.png-b462830ffd3cea54fa59bd8f3845c952.stex"
+path="res://.import/toilettes.png-1a9368802e54c346c959d8fb02902abb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/gnome.png"
-dest_files=[ "res://.import/gnome.png-b462830ffd3cea54fa59bd8f3845c952.stex" ]
+source_file="res://Assets/toilettes.png"
+dest_files=[ "res://.import/toilettes.png-1a9368802e54c346c959d8fb02902abb.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
