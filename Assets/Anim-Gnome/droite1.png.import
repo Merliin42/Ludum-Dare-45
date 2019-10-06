@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Face3.png-39852ba418a74d9c7aab463220d22a6c.stex"
+path="res://.import/droite1.png-a69d814f6da15e0e38353d3148d5d4c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Anim-Gnome/Face3.png"
-dest_files=[ "res://.import/Face3.png-39852ba418a74d9c7aab463220d22a6c.stex" ]
+source_file="res://Assets/Anim-Gnome/droite1.png"
+dest_files=[ "res://.import/droite1.png-a69d814f6da15e0e38353d3148d5d4c7.stex" ]
 
 [params]
 

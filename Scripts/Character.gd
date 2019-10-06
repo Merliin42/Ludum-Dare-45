@@ -15,8 +15,11 @@ func _process(delta):
 
 	velocity.x = -int(left) + int(right)
 	velocity.y = -int(up) + int(down)
-	if Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_right"):
-		$POL.play("side")
+	if Input.is_action_pressed("ui_left") :
+		$POL.play("left")
+		$popol.play("default")
+	elif Input.is_action_pressed("ui_right") :
+		$POL.play("right")
 		$popol.play("default")
 	elif Input.is_action_pressed("ui_down"):
 		$POL.play("down")
@@ -25,7 +28,7 @@ func _process(delta):
 		$POL.play("up")
 		$popol.play("default")
 	else:
-		$POL.stop()
+		$POL.play("stop")
 		$popol.stop()
 #	if velocity.x != 0:
 #		$POL.animation = "right"

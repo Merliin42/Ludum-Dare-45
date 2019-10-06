@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Droit1.png-2b9d894a4024db9cc12311c51949b38f.stex"
+path="res://.import/droite0.png-fff23264ac148154e27d57906d05556c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Anim-Gnome/Droit1.png"
-dest_files=[ "res://.import/Droit1.png-2b9d894a4024db9cc12311c51949b38f.stex" ]
+source_file="res://Assets/Anim-Gnome/droite0.png"
+dest_files=[ "res://.import/droite0.png-fff23264ac148154e27d57906d05556c.stex" ]
 
 [params]
 
