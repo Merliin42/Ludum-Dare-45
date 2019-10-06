@@ -7,7 +7,8 @@ func _ready() -> void:
 	set_process(false)
 
 func _process(delta: float) -> void:
-	pass
+	var move_distance : = speed * delta
+	move_along_path(move_distance)
 
 func move_along_path(distance : float) -> void:
 	pass
