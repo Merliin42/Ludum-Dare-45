@@ -13,7 +13,7 @@
 animations = [ {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "right",
+"name": "up",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
@@ -50,6 +50,7 @@ frames = SubResource( 1 )
 animation = "down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.046463, 1.38095 )
 shape = SubResource( 2 )
 
 [node name="popol" type="AnimatedSprite" parent="."]

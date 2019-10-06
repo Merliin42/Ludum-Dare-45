@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/billard.png-c72946c7a68605ba9a279565fbb8c5cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://Assets/billard.png"
+dest_files=[ "res://.import/billard.png-c72946c7a68605ba9a279565fbb8c5cc.stex" ]
 
 [params]
 
