@@ -1,60 +1,35 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/Character.gd" type="Script" id=1]
-[ext_resource path="res://Assets/bulle.png" type="Texture" id=2]
-[ext_resource path="res://Assets/gnome.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Anim-Gnome/Face1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Anim-Gnome/Face0.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Anim-Gnome/Face2.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Anim-Gnome/Face3.png" type="Texture" id=7]
-[ext_resource path="res://Assets/gnome1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/gnome.png" type="Texture" id=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "up",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
-"name": "down",
+"name": "right",
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 29.993, 60.1981 )
-
-[sub_resource type="SpriteFrames" id=3]
-animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 12.7466
+height = 23.7301
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 SPEED = 300
 
-[node name="bulle" type="Sprite" parent="."]
-position = Vector2( 0, -800 )
-texture = ExtResource( 2 )
-
 [node name="POL" type="AnimatedSprite" parent="."]
-position = Vector2( 76.7439, -402.316 )
+position = Vector2( -0.106398, 0.723595 )
+scale = Vector2( 0.0428206, 0.0428206 )
 frames = SubResource( 1 )
-animation = "down"
+animation = "right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.046463, 1.38095 )
 shape = SubResource( 2 )
-
-[node name="popol" type="AnimatedSprite" parent="."]
-scale = Vector2( 30, 30 )
-frames = SubResource( 3 )
-frame = 1
-playing = true
