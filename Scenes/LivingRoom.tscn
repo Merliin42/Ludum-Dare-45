@@ -9,9 +9,9 @@
 [ext_resource path="res://Assets/tapis bleu jam.png" type="Texture" id=7]
 [ext_resource path="res://Assets/billard.png" type="Texture" id=8]
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=1]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 443.224, 209.206 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
@@ -46,15 +46,12 @@ SPEED = 500
 [node name="Camera2D" type="Camera2D" parent="Character"]
 position = Vector2( 16.916, -4.59961 )
 current = true
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="biblio" type="StaticBody2D" parent="."]
 position = Vector2( 4629.81, 3377.07 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="biblio"]
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="biblio/CollisionShape2D"]
 position = Vector2( -153.613, -72.8699 )
@@ -65,7 +62,7 @@ position = Vector2( 4932.2, 3377.07 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="biblio2"]
 position = Vector2( -171.836, -65.8706 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="biblio2/CollisionShape2D"]
 position = Vector2( 18.2227, -6.99927 )
