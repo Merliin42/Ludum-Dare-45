@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/marche-ar1.png-88b498da053f7168c345624edec9e890.stex"
+path="res://.import/Marche-ar1.png-1fc6e6e67e531d42c2d4b10afc1d7e12.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Anim-Gnome/marche-ar1.png"
-dest_files=[ "res://.import/marche-ar1.png-88b498da053f7168c345624edec9e890.stex" ]
+source_file="res://Assets/Anim-Gnome/Marche-ar1.png"
+dest_files=[ "res://.import/Marche-ar1.png-1fc6e6e67e531d42c2d4b10afc1d7e12.stex" ]
 
 [params]
 

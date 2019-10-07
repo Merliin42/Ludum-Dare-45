@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arrière.png-d19e9c770d5038c6efbfd5657575d53a.stex"
+path="res://.import/Arrière.png-182be40ce17f66e7bea106b4136732d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Anim-Gnome/arrière.png"
-dest_files=[ "res://.import/arrière.png-d19e9c770d5038c6efbfd5657575d53a.stex" ]
+source_file="res://Assets/Anim-Gnome/Arrière.png"
+dest_files=[ "res://.import/Arrière.png-182be40ce17f66e7bea106b4136732d1.stex" ]
 
 [params]
 
