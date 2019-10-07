@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Droit0.png-0d27d9f42ca109f8b1a9f828dd14bdcf.stex"
+path="res://.import/marche-gauche1.png-46b5dbd82ba89cde91ab4ef9a1812670.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Anim-Gnome/Droit0.png"
-dest_files=[ "res://.import/Droit0.png-0d27d9f42ca109f8b1a9f828dd14bdcf.stex" ]
+source_file="res://Assets/Anim-chat/marche-gauche1.png"
+dest_files=[ "res://.import/marche-gauche1.png-46b5dbd82ba89cde91ab4ef9a1812670.stex" ]
 
 [params]
 
