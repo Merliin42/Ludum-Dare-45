@@ -1098,6 +1098,16 @@ position = Vector2( 6224.39, 2125.36 )
 scale = Vector2( 0.380669, 0.380667 )
 texture = ExtResource( 9 )
 
+[node name="tapis5" type="Sprite" parent="."]
+position = Vector2( 4778.57, 4966.75 )
+scale = Vector2( 0.44107, 0.441068 )
+texture = ExtResource( 9 )
+
+[node name="tapis6" type="Sprite" parent="."]
+position = Vector2( 6224.39, 2125.36 )
+scale = Vector2( 0.380669, 0.380667 )
+texture = ExtResource( 9 )
+
 [node name="canap" type="StaticBody2D" parent="."]
 editor/display_folded = true
 position = Vector2( 4605.26, 4675.35 )
@@ -1357,6 +1367,7 @@ scale = Vector2( 0.642183, 0.610641 )
 texture = ExtResource( 16 )
 
 [node name="lavabo3" type="Sprite" parent="salle de bain/Baigoire"]
+
 position = Vector2( -500.982, -207.995 )
 scale = Vector2( 0.642183, 0.610641 )
 texture = ExtResource( 16 )
