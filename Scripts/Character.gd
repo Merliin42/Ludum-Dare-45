@@ -42,3 +42,6 @@ func _process(delta):
 func movement_loop():
 	var motion = velocity.normalized() * SPEED
 	move_and_slide(motion)
+
+func indentification():
+	return "gnome"

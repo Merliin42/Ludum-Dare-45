@@ -2,10 +2,10 @@
 
 [ext_resource path="res://Scripts/Character.gd" type="Script" id=1]
 [ext_resource path="res://Assets/bulle.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Anim-Gnome/marche-droite0.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Anim-Gnome/marche-droite1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Anim-Gnome/marche-gauche0.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Anim-Gnome/marche-gauche1.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Anim-Gnome/marche-gauche0.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Anim-Gnome/marche-gauche1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Anim-Gnome/marche-droite0.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Anim-Gnome/marche-droite1.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Anim-Gnome/marche-ar0.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Anim-Gnome/marche-ar1.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Anim-Gnome/face0.png" type="Texture" id=9]
@@ -20,12 +20,12 @@
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "right",
+"name": "left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
-"name": "left",
+"name": "right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
